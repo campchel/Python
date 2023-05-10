@@ -1,4 +1,11 @@
-class bank_account:
+class user:
+    frist_name= CaleeAnn
+    last_name= Wrath
+    DOB= 04/12/1985
+    email= caleeannwrath@gmail.com
+
+
+class bank_account():
     def __init__(self, first_name, last_name, DOB, email, amount):
         self.first_name = first_name
         self.last_name = last_name
@@ -31,11 +38,6 @@ class bank_account:
         self.checking_account.transfer_money(100)
         print((self.savings_account.balance) + 'has been transfered to'(self.checking_account.balance))
 
-
-# CaleeAnn = first_name
-# Wrath = last_name
-# 04/12/1985 = DOB
-# caleeannwrath@gmail.com = email
 
 CaleeAnn_Checking = bank_account(300)
 CaleeAnn_Savings = bank_account(300)

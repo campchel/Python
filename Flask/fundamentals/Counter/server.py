@@ -4,11 +4,15 @@ app.secret_key = 'keep it secret, keep it safe'
 
 
 
+
 @app.route('/count') # will process the form
 def count():
+        #ask-is count in session?
         if 'count' in session:
+            # if count is in session, increase by 1
             session['count']+=1
         else:
+            # hasn't made a session yet add to session
             session['count']=0
         return render_template("counter.html", count=session['count'])
 
